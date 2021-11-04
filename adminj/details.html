@@ -1,0 +1,168 @@
+<html>
+<head>
+	<link media = all  rel = stylesheet href="css/bootstrap.min.css">
+	<link media = all  rel = stylesheet href="css/fontawesome.css">
+	<link media = all  rel = stylesheet href="css/owl.carousel.css">
+	<link media = all  rel = stylesheet href="css/owl.theme.default.css">
+	<link media = all  rel = stylesheet href="css/aos.css">
+	<link media = all  rel = stylesheet href="css/drawer.css">
+	<link media = all  rel = stylesheet href="css/simple-switch.css">
+	<link media = all  rel = stylesheet href="css/head.css">
+	<link media = all  rel = stylesheet href="css/css.css">
+	
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+<link rel = "shortcut icon" type = "icons/logo.png" href = "">
+	
+	<title>ATM</title>
+	
+</head>
+
+<body class = "drawer drawer--left">
+
+	<div class = "greybg" style="background:white;"></div>
+
+  <div role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger s">
+    <div class ="">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+    <div class = "nav_wrapper">
+    	<div class = "row user_data">
+    		<div class = "user_avatar">
+    			<img src = "icons/avatar.png" width = 100%>
+    		</div>
+    		<div class = "user_info">
+    			<div class = "user_name"><span id = "user_name"></span></div>
+    			<div class = "user_email"></div>    		
+    		</div>
+    	</div>
+      <ul class="drawer-menu">
+      	<li><a class="drawer-menu-item hr1" href="#">_____________________________</a></li>
+        <li><a class="drawer-menu-item" href="home.html">Home</a></li>
+        <li><a class="drawer-menu-item" href="location.html">Request Item Pickup</a></li>
+        <li><a class="drawer-menu-item" href="pending.html">View Pending Deliveries</a></li>
+        <li><a class="drawer-menu-item" href="history1.html">Delivery history</a></li>
+        <li><a class="drawer-menu-item" href="contact1.html">Contact us</a></li>
+        <li><a class="drawer-menu-item hr1" href="#">_____________________________</a></li>
+        <li><a class="drawer-menu-item logout-link" href="index.html">Log out</a></li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+  
+  <!-- 
+    <main role="main">
+     Page content
+  </main>
+  -->
+  
+<div class = "home_main">
+
+<div class = "otherbg">
+ 	<img class = "backimg" src = "icons/landing.png">
+<div class = "cont_home otherbg-color">
+	<div class = "rent2_main">
+	
+		<div class = "rent2_upper">
+		<div class = "r2u">
+			<p>DETAILS </p>
+		</div>
+		</div>
+		<div class = "rent2_lower">
+		
+		<div id = "summary"></div>
+		<div id = "rides">
+		
+		
+			<table class = "booked_info unitable">
+		<tr>
+		<th CLASS = "booked_route" colspan = 3><p>AWAITING CONFIRMATION</p></th>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">SENDER </span></td>
+		<td class = "booked_colon"> : </td>
+		<td><span class = "booked_data">EMEKA IKEMELU 080xxxxxxxx</span></td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">RECIEVER </span></td>
+		<td class = "booked_colon"> : </td>
+		<td>MOSES EMARETOMBOFA 070xxxxxxxxxx</td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">PICKUP ADDRESS</span></td>
+		<td class = "booked_colon"> : </td>
+		<td>15 OTIGBA STREET, LAGOS</td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">DESTINATION ADDRESS</span></td>
+		<td class = "booked_colon"> : </td>
+		<td>2 IWEKA ROAD, ONITSHA</td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">PACKAGE DESC</span></td>
+		<td class = "booked_colon"> : </td>
+		<td>1 3.2KVA GENERATOR</td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">DIMENTIONS (inches)</span></td>
+		<td class = "booked_colon"> : </td>
+		<td><span class = "booked_data">22 X 22 X 19</span><span class = "booked_data">' . $dt . ' AM</span></td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">WEIGHT (grams)</span></td>
+		<td class = "booked_colon"> : </td>
+		<td>50000</td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">ADDITIONAL INFO</span></td>
+		<td class = "booked_colon"> : </td>
+		<td>HANDLE WITH CARE. CALL RECIPIENT FOR DELIVERY CONFIRMATION</td>
+		</tr>
+		<tr class = "uni">
+		<td><span class = "summary_main">REF NO. </span></td>
+		<td class = "booked_colon"> : </td>
+		<td>102002019191232</td>
+		</tr>
+				
+		</table>
+		<div class = "search_button r_search bottom">
+		<!-- <button type = "submit" id = "summary_cont" value = "summary_cont" class = "" onclick = "return false" onmousedown = "summary_cont()">PROCESS PAYMENT</button> -->
+		<button type = "submit" id = "summary_cont" value = "summary_cont" class = "" onclick = "return false" onmousedown = location.assign("pending.html")>GO BACK</button>
+		</div>
+			
+		</div>    
+			
+			<div id = "error" class = "error"></div>
+			
+		</div>
+	</div>
+	
+
+</div>
+</div>
+
+</div>
+
+
+<script src = "js/jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/iscroll.js"></script>
+<script src = "js/drawer.js"></script>
+<script src = "js/jquery.simpleswitch.min.js"></script>
+<script src = "js/mymain.js"></script>
+<script src = "js/book.js"></script>
+
+
+
+</body>
+</html>

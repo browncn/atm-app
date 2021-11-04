@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149.493" height="170.598" viewBox="0 0 149.493 170.598">
+  <defs>
+    <filter id="Shadow_06dp" x="0" y="0" width="149.493" height="149.493" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.141"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_275" data-name="Group 275" transform="translate(-39 -266)">
+    <g transform="matrix(1, 0, 0, 1, 39, 266)" filter="url(#Shadow_06dp)">
+      <rect id="Shadow_06dp-2" data-name="Shadow / 06dp" width="119.493" height="119.493" rx="2" transform="translate(15 9)" fill="#cc28bc"/>
+    </g>
+    <text id="Book_a_ticket" data-name="Book a ticket" transform="translate(114 431.598)" fill="#cc28bc" font-size="19" font-family="Roboto-Regular, Roboto" letter-spacing="0.01em" opacity="0.9"><tspan x="-55.816" y="0">Book a ticket</tspan></text>
+    <g id="Group_266" data-name="Group 266" transform="translate(-259.144 260.413)">
+      <path id="Path_2559" data-name="Path 2559" d="M351.144,63.616V90.54L364.3,97.765V78.68a24.452,24.452,0,0,1-5.493-10.855Z" transform="translate(0 -1.165)" fill="#fff"/>
+      <path id="Path_2560" data-name="Path 2560" d="M388.6,66.239a21.921,21.921,0,0,1-4.314,11.371V90.794l13.158,7.225V71.1Z" transform="translate(-3.211 -1.419)" fill="#fff"/>
+      <path id="Path_2561" data-name="Path 2561" d="M380.341,64.478c0-.133-.013-.263-.02-.394l-10.37,5.693a6.539,6.539,0,0,0,10.39-5.3Z" transform="translate(-1.822 -1.211)" fill="#fff"/>
+      <path id="Path_2562" data-name="Path 2562" d="M374.469,86.618l-.974.557-.931-.628a34.109,34.109,0,0,1-4.848-4.158V99.476l13.159-7.225V81.283A28.749,28.749,0,0,1,374.469,86.618Z" transform="translate(-1.605 -2.877)" fill="#fff"/>
+      <path id="Path_2563" data-name="Path 2563" d="M372.948,82.173s11.679-6.675,11.679-18.906a11.68,11.68,0,1,0-23.359,0C361.268,74.3,372.948,82.173,372.948,82.173Zm-8.359-18.906a8.358,8.358,0,1,1,8.359,8.359A8.359,8.359,0,0,1,364.589,63.267Z" transform="translate(-0.981)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

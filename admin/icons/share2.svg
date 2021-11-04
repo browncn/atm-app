@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149.493" height="171.307" viewBox="0 0 149.493 171.307">
+  <defs>
+    <filter id="Shadow_06dp" x="0" y="0" width="149.493" height="149.493" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.141"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_273" data-name="Group 273" transform="translate(-187 -471)">
+    <text id="Share_app" data-name="Share app" transform="translate(262 637.307)" fill="#cc28bc" font-size="19" font-family="Roboto-Regular, Roboto" letter-spacing="0.01em" opacity="0.9"><tspan x="-43.134" y="0">Share app</tspan></text>
+    <g id="Group_272" data-name="Group 272">
+      <g transform="matrix(1, 0, 0, 1, 187, 471)" filter="url(#Shadow_06dp)">
+        <rect id="Shadow_06dp-2" data-name="Shadow / 06dp" width="119.493" height="119.493" rx="2" transform="translate(15 9)" fill="#cc28bc"/>
+      </g>
+      <path id="Path_2564" data-name="Path 2564" d="M284.323,207.148a7.356,7.356,0,0,0-4,1.184l-6.269-4.448-4.336-3.076a7.438,7.438,0,0,0,.1-1.181,7.353,7.353,0,0,0-.459-2.538l4.692-3.33,6.274-4.45a7.419,7.419,0,1,0-3.116-4.225l-4.379,3.107-6.937,4.921a7.38,7.38,0,1,0,1.176,12.251l5.761,4.087,4.379,3.107a7.285,7.285,0,0,0-.276,1.972,7.39,7.39,0,1,0,7.389-7.381Zm-.164-28.269a4.159,4.159,0,1,1-4.16,4.158A4.159,4.159,0,0,1,284.16,178.879Zm-21.815,25.149a4.159,4.159,0,1,1,4.158-4.16A4.159,4.159,0,0,1,262.344,204.028Zm21.815,14.717a4.159,4.159,0,1,1,4.158-4.16A4.159,4.159,0,0,1,284.16,218.746Z" transform="translate(-12.04 340.27)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

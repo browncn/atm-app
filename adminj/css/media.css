@@ -1,0 +1,93 @@
+@CHARSET "ISO-8859-1";
+@font-face {
+	font-family : deus;
+	src : url("../fonts/contl.ttf");
+}
+
+body {
+	width : 100%;
+	margin : auto;
+	background :white;
+	padding-bottom : 20px;
+}
+
+.head {
+	width : 100%
+}
+
+.navbar-nav ul li a {
+	display : block;
+	background : grey;
+	color : white;
+}
+
+.container {
+	background : white;
+	
+}
+
+.content {
+	height : 70%;
+	border-bottom : 1px solid black;
+	background : white;
+	margin : auto;
+
+}
+
+.topic {
+	min-width : 300px;
+	padding : 5px;
+}
+
+.topic ul li {
+	list-style : none;
+	display : block;
+	background : rgba(211,211,211,0.5);
+	border-bottom : 1px solid black;
+	padding : 10px;
+	position : relative;
+}
+
+.topic ul li:hover {
+	background : rgba(168,168,168,1);
+}
+
+.topic ul li:onclick {
+	background : rgba(168,168,168,1);
+}
+
+
+.data {
+	width : 700px;
+	padding : 50px;
+	padding-top : 20px;
+	text-align : left;
+	background : white;
+}
+
+
+
+
+footer {
+	width : 100%;
+	height : 50px;
+	background : black;
+	color : white;
+	font-weight : bold;
+	border-top : 1px solid black;
+	margin : auto;
+	text-align : center;
+	position : bottom;
+	bottom : 0;
+	position : fixed;
+}
+
+footer p {
+	padding-top : 10px;
+}
+
+.amordeus {
+	font-family : deus;
+	color : rgba(200,255,200,1);
+}
+

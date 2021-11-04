@@ -1,0 +1,180 @@
+<html>
+<head>
+	<link media = all  rel = stylesheet href="css/bootstrap.min.css">
+	<link media = all  rel = stylesheet href="css/fontawesome.css">
+	<link media = all  rel = stylesheet href="css/owl.carousel.css">
+	<link media = all  rel = stylesheet href="css/owl.theme.default.css">
+	<link media = all  rel = stylesheet href="css/aos.css">
+	<link media = all  rel = stylesheet href="css/drawer.css">
+	<link media = all  rel = stylesheet href="css/simple-switch.css">
+	<link media = all  rel = stylesheet href="css/head.css">
+	<link media = all  rel = stylesheet href="css/css.css">
+	
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+<link rel = "shortcut icon" type = "icons/logo.png" href = "">
+	
+	<title>ATM</title>
+</head>
+
+<body class = "drawer drawer--left">
+
+	<div class = "greybg" style="background:white;"></div>
+	
+	
+
+  <div role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger s s_home">
+    <div class ="dude">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+    <div class = "nav_wrapper">
+    	<div class = "row user_data">
+    		<div class = "user_avatar">
+    			<img src = "icons/avatar.png" width = 100%>
+    		</div>
+    		<div class = "user_info">
+    			<div class = "user_name"><span id = "user_name"></span></div>
+    			<div class = "user_email"></div>    		
+    		</div>
+    	</div>
+      <ul class="drawer-menu">
+      	<li><a class="drawer-menu-item hr1" href="#">_____________________________</a></li>
+        <li><a class="drawer-menu-item" href="home.html">Home</a></li>
+        <li><a class="drawer-menu-item" href="vehicle.html">Ship Item</a></li>
+        <li><a class="drawer-menu-item" href="pendinglist.html">Pending Deliveries</a></li>
+        <li><a class="drawer-menu-item" href="track.html">Track Delivery</a></li>
+        <li><a class="drawer-menu-item" href="userprofile.html">My Profile</a></li>
+        <li><a class="drawer-menu-item" href="contact.html">Contact Us</a></li>
+        <li><a class="drawer-menu-item hr1" href="#">_____________________________</a></li>
+        <li><a class="drawer-menu-item logout-link" href="logout.php">Log out</a></li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+  
+  <!-- 
+    <main role="main">
+     Page content
+  </main>
+  -->
+  
+<div class = "home_main">
+	<div class = "rent2_main">
+		<div class = "rent2_upper">
+		<div class = "row r2u">
+			<p class = "m-auto">DELIVERY INFO</p>
+			<div class = "text-right top_arrow ">
+  				<button class = "def_button" style = "border-radius : 5px; border : 1px solid; background : white" onclick = "window.location.href='vehicle.html';">&#8592</button>
+  			</div>
+		</div>
+		</div>
+		<div class = "rent2_lower">
+			<div class = "div_main row">
+				<input  type = "text" name = "descr" id = "descr" placeholder = "Item Name or Description">
+				<input  type = "text" name = "n_sen" id = "n_sen" placeholder = "Name Of Sender">
+				<input  type = "text" name = "addr_sen" id = "addr_sen" placeholder = "Address Of Sender">
+				<input  type = "text" name = "n_rec" id = "n_rec" placeholder = "Name Of Reciever">
+				<input  type = "text" name = "addr_rec" id = "addr_rec" placeholder = "Address Of Receiver">
+				
+				
+				<div class = "w-47 m-auto">
+					<span class = "">Phone Of Sender:</span>
+					<input  type ="number" onKeyPress="if(this.value.length == 11){return false}" name = "phone_sen" id = "phone_sen" placeholder = "0803xxxxxxx" class = "form-control" maxlength=11 min = 0 max = 99999999999>
+				</div>
+				<div class = "w-47 m-auto">
+					<span class = "">Phone Of Reciever:</span>
+					<input  type ="number" onKeyPress="if(this.value.length == 11){return false}" name = "phone_rec" id = "phone_rec" placeholder = "0803xxxxxxx" class = "form-control" maxlength=11 min = 0 max = 99999999999>
+				</div>
+				
+				<div class = "w-47 m-auto">
+				<span class = "">State Of Departure:</span>
+				<select name = "s_state" id = "s_state" oninput="actual();">
+				</select>
+				</div>
+				<div class = "w-47 m-auto">
+				<span class = "">State Of Destination:</span>
+				<select name = "r_state" id = "r_state" oninput="actual();">
+				</select>
+				</div>
+				
+				<div class = "w-47 m-auto">
+				<span class = "">Senders Email:</span>
+				<input  type = "email" name = "email" id = "email" placeholder = "">
+				</div>
+				<div class = "w-47 m-auto">
+				<span class = "">Item Value:</span>
+				<input  type = "number" name = "value" id = "value" placeholder = "" oninput="actual();">
+				</div>
+				
+				<div class = "w-47 m-auto">
+				<span class = "">Quantity:</span>
+				<input  type = "number" name = "qty" id = "qty" value = "1" oninput="actual();">
+				</div>
+				<div class = "w-47 m-auto">
+				<span class = "">Weight(kg):</span>
+				<input  type = "number" name = "weight" id = "weight" value = "1" oninput="actual();">
+				</div>
+				
+				<div class = "w-47 m-auto">
+				<span class = "">Payment Method:</span>
+				<select name = "payment" id = "payment">
+					<option value = "online">ONLINE</option>
+					<option value = "ondelivery">PAYMENT ON DELIVERY</option>
+				</select>
+				</div>
+				<div class = "w-47 m-auto">
+				<span class = "">Delivery Preference:</span>
+				<select name = "deliv" id = "deliv" onchange="actual();">
+					<option value = "pickup">OFFICE PICKUP</option>
+					<option value = "delivery">HOME DELIVERY</option>
+				</select>
+				</div>
+				
+			</div>
+			<div class = "div_main"><span id = "actual" class = "ml-auto;" style = "font-size:30px; font-weight:bold; text-align:right;"></span></div>
+			
+			<div id = "error" class = "red">
+			</div>
+			<div id = "check">
+			</div>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->			
+				<div class="modal-content">
+				  <div class="modal-header" id = "modal-header">
+				    <h2>Information!</h2>
+				    <span class="close" id = 'cancel'> &times; </span>
+				  </div>
+				  <div class="modal-body" id = "modal-body">
+				  </div>
+				  <div class="modal-footer" id="modal-footer">
+				  </div>
+				</div>
+			</div>
+			<button class = "r_search bottom def_button" onclick = "return false;" onmousedown = "checknsave();">PROCEED</button>
+			</div>
+			
+		</div>		
+	</div>
+
+<script src = "js/jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/iscroll.js"></script>
+<script src = "js/drawer.js"></script>
+<script src = "js/mymain.js"></script>
+<script src = "js/shipinfo.js"></script>
+
+
+
+</body>
+</html>

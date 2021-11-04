@@ -1,0 +1,170 @@
+<html>
+<head>
+	<link media = all  rel = stylesheet href="css/bootstrap.min.css">
+	<link media = all  rel = stylesheet href="css/fontawesome.css">
+	<link media = all  rel = stylesheet href="css/owl.carousel.css">
+	<link media = all  rel = stylesheet href="css/owl.theme.default.css">
+	<link media = all  rel = stylesheet href="css/aos.css">
+	<link media = all  rel = stylesheet href="css/drawer.css">
+	<link media = all  rel = stylesheet href="css/head.css">
+	<link media = all  rel = stylesheet href="css/css.css">
+	
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+<link rel = "shortcut icon" type = "icons/logo.png" href = "">
+	
+	<title>ATM</title>
+</head>
+
+<body class = "drawer drawer--left">
+
+	<div class = "greybg" style="background:white;"></div>
+
+  <div role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+    <div class = "nav_wrapper">
+    	<div class = "row user_data">
+    		<div class = "user_avatar">
+    			<img src = "icons/avatar.png" width = 100%>
+    		</div>
+    		<div class = "user_info">
+    			<div class = "user_name"><span id = "user_name"></span></div>
+    			<div class = "user_email"></div>    		
+    		</div>
+    	</div>
+      <ul class="drawer-menu">
+      	<li><a class="drawer-menu-item hr1" href="#">_____________________________</a></li>
+        <li><a class="drawer-menu-item" href="home.html">Home</a></li>
+        <li><a class="drawer-menu-item" href="book.html">Book a ticket</a></li>
+        <li><a class="drawer-menu-item" href="rent.html">Charter a vehicle</a></li>
+        <li><a class="drawer-menu-item" href="history.html">Booking history</a></li>
+        <li><a class="drawer-menu-item" href="share.html">Share app</a></li>
+        <li><a class="drawer-menu-item" href="contact.html">Contact us</a></li>
+        <li><a class="drawer-menu-item" href="rate.html">Rate us</a></li>
+        <li><a class="drawer-menu-item hr1" href="#">_____________________________</a></li>
+        <li><a class="drawer-menu-item logout-link" href="logout.php">Log out</a></li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+  
+  <!-- 
+    <main role="main">
+     Page content
+  </main>
+  -->
+  
+<div class = "home_main">
+	<div class = "book_main">
+		<div class = "book_upper">
+			<div class = "book_vehicle">
+				<p>BOOK A TICKET</p>
+			</div>
+			<div class = "book_dest row">
+				<select class = "book_select" name = "from">
+					<option>LAG</option>
+					<option>ABJ</option>
+					<option>ENU</option>
+				</select>
+				<div class = "arrow">&#9658;</div>
+				<select class = "book_select" name = "to">
+					<option>ABJ</option>
+					<option>LAG</option>
+					<option>ENU</option>
+				</select>
+			</div>
+			<div class = "book_trip">
+				<label class="switch">
+  					<input type="checkbox">
+					<span class="book_slider round">
+						<span class = "round_p"></span>
+					</span>
+				</label>
+			</div>
+		</div>
+		<div class = "book_lower">
+			<div class = "date">
+				<div class = "row book_input">
+				<div class = "date1">
+					<p>Departure Date</p>
+					<input class = "form-control" type = "date" name = "depart" placeholder = "Depart Date">
+				</div>
+				<div class = "date1">
+					<p>Arrival Date</p>
+					<input class = "form-control" type = "date" name = "return" placeholder = "Return Date">
+				</div>
+				</div>
+			</div>
+			<div class = "passengers">
+			<p class = "book_input_p">Passengers</p>
+				<div class = "book_input_select row">
+					<div class = "book_select">
+					<p>Adults</p>
+					<select name = "adults">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					</div>
+					<div class = "book_select">
+					<p>Child</p>
+					<select name = "child">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					</div>
+					<div class = "book_select">
+					<p>Infants</p>
+					<select name = "infants">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					</div>
+				</div>
+			</div>
+			<div class = "fleet">
+			<p class = "book_input_p">Fleet</p>
+				<div class = "row radio_buttons">
+				<label class = "radio">
+					<input name = "fleet" type = "radio" value = "regular" checked>
+					<span class="checkmark"></span>
+				</label>
+				
+				<label class = "radio">
+					<input name = "fleet" type = "radio" value = "Express">
+					<span class="checkmark1"></span>
+				</label>
+				</div>
+			</div>			
+			<div class = "search_button">
+				<button>SEARCH</button>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<script src = "js/jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/iscroll.js"></script>
+<script src = "js/drawer.js"></script>
+
+
+</body>
+</html>

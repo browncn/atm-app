@@ -1,0 +1,132 @@
+
+<html>
+<head>
+	<link media = all  rel = stylesheet href="css/bootstrap.min.css">
+	<link media = all  rel = stylesheet href="css/fontawesome.css">
+	<link media = all  rel = stylesheet href="css/owl.carousel.css">
+	<link media = all  rel = stylesheet href="css/owl.theme.default.css">
+	<link media = all  rel = stylesheet href="css/aos.css">
+	<link media = all  rel = stylesheet href="css/head.css">
+	<link media = all  rel = stylesheet href="css/css.css">
+	
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+<link rel = "shortcut icon" type = "icons/logo.png" href = "">
+	
+	<title>ATM</title>
+</head>
+
+<body>
+
+<div class = "createbg">
+	<img class = "backimg" src = "icons/createbg.png">
+<div class = "container createbg-color">
+	<div class = "create_icon">
+		<img src = "icons/logo3.svg" width = 100%>
+	</div>
+	<div class = "">
+		<div class = "create_form">
+			<input class = "form-control " type = "text" name = "fname" id = "fname" placeholder = "First name">
+		</div>
+		<div class = "create_form">
+			<input class = "form-control " type = "text" name = "lname" id = "lname" placeholder = "Last name">
+		</div>
+		<div class = "create_form">
+			<select class = "form-control " name = "state" id = "state" >
+				<option value = "">State of residence</option>
+				<option value = "abia">Abia</option>
+					  <option value = "adamawa">Adamawa</option>
+					  <option value = "akwa ibom">Akwa Ibom</option>
+					  <option value = "anambra">Anambra</option>
+					  <option value = "bauchi">Bauchi</option>
+					  <option value = "bayelsa">Bayelsa</option>
+					  <option value = "benue">Benue</option>
+					  <option value = "borno">Borno</option>
+					  <option value = "cross river">Cross River</option>
+					  <option value = "delta">Delta</option>
+					  <option value = "ebonyi">Ebonyi</option>
+					  <option value = "edo">Edo</option>
+					  <option value = "ekiti">Ekiti</option>
+					  <option value = "enugu">Enugu</option>
+					  <option value = "abuja">FCT - Abuja</option>
+					  <option value = "gombe">Gombe</option>
+					  <option value = "imo">Imo</option>
+					  <option value = "jigawa">Jigawa</option>
+					  <option value = "kaduna">Kaduna</option>
+					  <option value = "kano">Kano</option>
+					  <option value = "katsina">Katsina</option>
+					  <option value = "kebbi">Kebbi</option>
+					  <option value = "kogi">Kogi</option>
+					  <option value = "kwara">Kwara</option>
+					  <option value = "lagos">Lagos</option>
+					  <option value = "nasarawa">Nasarawa</option>
+					  <option value = "niger">Niger</option>
+					  <option value = "ogun">Ogun</option>
+					  <option value = "ondo">Ondo</option>
+					  <option value = "osun">Osun</option>
+					  <option value = "oyo">Oyo</option>
+					  <option value = "plateau">Plateau</option>
+					  <option value = "rivers">Rivers</option>
+					  <option value = "sokoto">Sokoto</option>
+					  <option value = "taraba">Taraba</option>
+					  <option value = "yobe">Yobe</option>
+					  <option value = "zamfara">Zamfara</option>
+			</select>
+		</div>
+		<div class = "create_form">
+			<input class = "form-control " type = "text" name = "addr" id = "addr" placeholder = "Address">
+		</div>
+		
+		<div class = "gender">
+			<span>Select gender</span>
+			<label class="gender_label">
+  					<input type="radio" name = "gender" id = "gmale" value = "male" checked>
+					<span class="gender_label_span"></span>
+			</label>
+			<span>Male</span>
+			<label class="gender_label">
+  					<input type="radio" name = "gender" id = "gfemale" value = "female" >
+					<span class="gender_label_span"></span>
+			</label>
+			<span>Female</span>
+		</div>
+		
+		<div class = "row m-auto">
+		<div class = "create_form w-47">
+			<input  type ="number" onKeyPress="if(this.value.length == 11){return false}" name = "tel" id = "tel" placeholder = "phone " class = "form-control" maxlength=11 min = 0 max = 99999999999>
+		</div>
+		<div class = "create_form w-47">
+			<input class = "form-control " type = "email" name = "email" id = "email" placeholder = "Email address">
+		</div>
+		</div>
+		
+		<div class = "row m-auto">
+		<div class = "create_form w-47">
+			<input class = "form-control " type = "password" name = "pass1" id = "pass1" placeholder = "Password"">
+		</div>
+		<div class = "create_form w-47">
+			<input class = "form-control " type = "password" name = "pass2" id = "pass2" placeholder = "Confirm password">
+		</div>
+		</div>
+		<div class = "create_button2">
+			<button id = "create" onclick="return false;" onmousedown="create2();" value = "create"> Create Account</button>
+		</div>
+		<div class = "forgot">
+			<p>Already have an account? <a href = "index.html">Sign In</a></p>
+		</div>
+		<div class = "error" id = "error"></div>
+	</div>
+</div>
+</div>
+<script src = "js/jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/create.js"></script>
+
+
+</body>
+</html>

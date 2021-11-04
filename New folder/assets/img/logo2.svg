@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129.038" height="61.655" viewBox="0 0 129.038 61.655">
+  <g id="Group_265" data-name="Group 265" transform="translate(405 -240.542)">
+    <g id="Group_3" data-name="Group 3" transform="translate(-405 240.542)">
+      <path id="Path_1" data-name="Path 1" d="M53.723,61.769c1.15.072-2.049-5.236.569-9.448s10.131-9.9,11.668-10.472a130.031,130.031,0,0,1,17.188-2.864c5.464-.455,11.782-.153,15.026-1.006s10.472-6.2,11.725-7.285S117.241,25,122.135,24.66s19.067-.911,22.254-.342,14.172,2.846,17.7,4.269,10.928,4.724,12.749,5.065a7.252,7.252,0,0,0,3.87-.171c.228-.228-2.163-.228-3.472-.683s-12.123-6.033-19.636-8.423-20.546-3.7-29.254-3.13-10.529,1.821-13.546,3.642-8.883,7.391-14.238,8.972c-5.418,1.6-16.894,1.785-20.48,2.07s-10.928.911-14.115,2.96-7.684,5.179-9.391,8.253-2.9,4.724-3.073,8.537S52.812,61.712,53.723,61.769Z" transform="translate(-49.687 -21.113)" fill="#cc28bc"/>
+      <g id="Group_2" data-name="Group 2" transform="translate(63.527 15.618)">
+        <path id="Path_2" data-name="Path 2" d="M313.779,115.078H308l-.989-5.927H299.99L299,115.078h-5.255l5.828-32.667h8.377Zm-13.061-10.36h5.516L303.477,88.2Z" transform="translate(-293.746 -82.411)" fill="#cc28bc"/>
+        <path id="Path_3" data-name="Path 3" d="M376.253,82.411h17.692v4.667h-5.984v28h-5.724v-28h-5.984Z" transform="translate(-355.231 -82.411)" fill="#cc28bc"/>
+        <path id="Path_4" data-name="Path 4" d="M467.463,105.6l3.9-23.193h7.961v32.667h-5.412V91.651l-3.955,23.427h-5.412l-4.267-23.1v23.1h-5V82.411h7.961Z" transform="translate(-414.129 -82.411)" fill="#cc28bc"/>
+      </g>
+      <text id="Ascent_Transport_Management" data-name="Ascent Transport Management" transform="translate(0 58.655)" fill="#cc28bc" font-size="9" font-family="BellMTBold, Bell MT"><tspan x="0" y="0">Ascent Transport Management</tspan></text>
+    </g>
+  </g>
+</svg>

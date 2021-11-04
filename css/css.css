@@ -1,0 +1,2359 @@
+@CHARSET "ISO-8859-1";
+@font-face {
+	font-family : rob;
+	src : url("../fonts/roboto_regular.ttf");
+}
+
+:focus {
+	outline : none;
+}
+:click {
+	outline : none;
+}
+.hidden {
+	display : none;
+}
+
+a:hover, a:focus {
+	text-decoration : none !important;
+}
+input:hover, input:focus, input:click {
+	border : 1px solid purple;
+	background : white !important;
+}
+input::placeholder {
+	color : rgba(0,0,0,0.2) !important;
+}
+
+body {
+	font-family : rob;
+	font-weight : bold;
+	color : grey;
+	background : white;
+	width : 100%;
+	margin : auto;
+}
+
+.greybg {
+	background : #F3F3F3;
+	width : 100%;
+	height : 100%;
+	position : fixed;
+	z-index : -1;
+}
+
+.container {
+	margin : auto;
+	padding-top : 20px;
+	background : white;
+	width : 100%;
+	max-width : 800px;
+	padding : 20px;
+	padding-top : 100px;
+}
+.coming_soon {
+	top : 40%;
+	width : 100%;
+	color : #4b0082;
+}
+.coming_soon_text span {
+	width : 100%;
+	font-size : 100%;
+	color : #4b0082;
+}
+
+/* Login */
+
+.login_icon {
+	padding : 30px;
+}
+
+.login {
+	
+}
+
+.login_form {
+	width : 100%;
+}
+.login_form p {
+	margin : auto;
+	padding-top : 10px;
+	padding-left : 20px;
+	padding-bottom : 5px;
+	font-size : 12px;
+	color : #151515;
+	opacity : 0.4;
+}
+
+.login_form input {
+	background : #FCFCFC;
+	margin : auto;
+	border-radius : 10px;
+	border : none;
+}
+
+.check {
+	padding-top : 10px;
+	padding-left : 20px;
+	padding-bottom : 40px;
+	font-size : 12px;
+	color : #151515;
+	opacity : 0.4;
+}
+.check input {
+	background : white;
+
+}
+.check span {
+	
+}
+
+.signin_button {
+	
+}
+.signin_button button {
+	margin : auto;
+	display : block;
+	width : 100px;
+	height  : 40px;
+	border-radius : 10px;
+	border : 2px solid #4b0082;
+	background : white;
+	color : #4b0082;
+	font-size : 14px;
+}
+.def_button {
+	margin : auto;
+	display : block;
+	border-radius : 5px;
+	border : 2px solid #4b0082;
+	color : #4b0082;
+	background : white;
+}
+.def_button:focus, .def_button:hover, .def_button:after {
+	background : #4b0082 !important;
+	color : white;
+	border : none;
+}
+
+.or {
+	
+}
+.or p {
+	margin : auto;
+	text-align : center;
+	color : #4b0082;
+	padding-top : 10px;
+	padding-bottom : 10px;
+}
+
+.create_button {
+	
+}
+.create_button button {
+	margin : auto;
+	display : block;
+	width : 170px;
+	height : 40px;
+	border : none;
+	border-radius : 200px;
+	background : #CC28BC;
+	box-shadow: 0px 2px 10px 0px #ff9fff;
+	color : #ffeef1;
+	font-size : 14px;
+}
+
+.forgot {
+	text-align : center;
+	margin : 20px;
+	margin-left : 0px;
+	margin-right : 0px;
+	font-size : 14px;
+	font-weight : 1px;
+	color : #151515;
+	opacity : 0.4;
+}
+
+
+/* create */
+
+.createbg {
+	background : rgba(255,255,255,0.9);
+	background-position : center;
+	width : 100%;
+	min-height : 100%;
+}
+.createbg .backimg {
+	position : fixed;
+	width : 100%;
+	z-index : -1;
+}
+.createbg-color {
+	background : rgba(255,255,255,0);
+}
+
+.create_icon {
+	padding : 60px;
+}
+
+.create_form {
+	width : 100%;
+}
+.create_form input {
+	margin : auto;
+	border : none;
+	border-bottom : 1px solid #c0c0c0;
+	color : grey;
+	background : rgba(0,0,0,0);
+}
+.create_form input::placeholder {
+	color : #151515 !important;
+	opacity : 0.5;
+	font-size : 15px;
+}
+
+.gender {
+	padding-top : 10px;
+	padding-left : 10px;
+	padding-bottom : 10px;
+	font-size : 15px;
+	color : #151515;
+	opacity : 0.6;
+}
+.gender span {
+	margin-right : 25px;
+	font-size : 15px;
+	color : #151515;
+	
+}
+.gender_label {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.gender_label input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.gender_label_span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border : 2px solid black;
+  margin : 0 !important;
+}
+.gender_label:hover input ~ .gender_label_span {
+  background-color: #eee;
+}
+.gender_label input:checked ~ .gender_label_span {
+	background : blue;
+}
+
+.gender_label_span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.gender_label input:checked ~ .gender_label_span:after {
+  display: block;
+}
+.gender_label .gender_label_after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 6px;
+  background: white;
+}
+
+.create_button2 button {
+	margin : auto;
+	display : block;
+	width : 190px;
+	height : 35px;
+	border : none;
+	border-radius : 200px;
+	background : #CC28BC;
+	box-shadow: 0px 2px 10px 0px #ff9fff;
+	color : #ffeef1;
+	margin-top : 30px;
+	font-size : 14px;
+}
+
+
+/* Home */
+
+.homebg {
+	background : rgba(255,255,255,0.85);
+	position : absolute;
+	background-position : center;
+	width : 100%;
+	min-height : 100%;
+}
+.otherbg {
+	background : rgba(255,255,255,0.9);
+	position : absolute;
+	background-position : center;
+	width : 100%;
+	min-height : 100% !important;
+}
+.homebg .backimg, .otherbg .backimg {
+	position : fixed;
+	width : 100%;
+	z-index : -1;
+}
+.homebg-color {
+	background : rgba(255,255,255,0);
+	padding-top : 70px;
+}
+.otherbg-color {
+	background : rgba(255,255,255,0);
+}
+
+
+.home_main {
+	width : 100%;
+}
+.cont_home {
+	min-height : 100% !important;
+	height : 100%;
+}
+
+.home_icon {
+	min-width : 130px !important;
+	width : 40% !important;
+	margin : auto;
+	margin-top : 50px;
+	margin-bottom : 30%;
+}
+
+.home {
+	margin : auto;
+}
+
+.home_icons {
+	width : 40%;
+	height : 120px;
+	margin : auto;
+	margin-bottom : 20%;
+	color : #4b0082;
+	
+}
+.home_icons a {
+	color : #4b0082;
+	width : 100%;
+}
+.home_icons:hover {
+	opacity : 0.5;
+}
+
+.h_icon {
+	margin : auto;
+	text-align : center;
+}
+.h_icon img {
+	height : 80%;
+	margin : auto;
+}
+.h_text {
+	width : 100%;
+	margin : auto;
+	text-align : center;
+}
+
+.span1{
+	width : 40% !important;
+	border-right : 1px solid grey;
+	font-weight : bold;
+	color : black;
+	text-align : left;
+}
+.span2{
+	width : 30%;
+	border-right : 1px solid grey;
+	font-weight : bold;
+	color : blue;
+	text-align : center;
+}
+.span3{
+	width : 20%;
+	font-weight : bold;
+	color : black;
+	padding-left : 10px;
+}
+.span3 a {
+	color : #4b0082;
+}
+
+
+/* nav */
+
+.top_arrow {
+	width : 10%;
+	margin-right : 5%;
+	border-radius : 0;
+}
+
+.drawer-hamburger {
+	margin-top : 20px;
+	width : 17px;
+	margiin : 11px 0;
+	padding-left : 37px;
+	overflow : hidden;
+}
+.drawer-nav {
+	background : #4b0082;
+}
+.nav_wrapper {
+	padding : 40px 30px;
+	line-height : 15px;
+	margin-top : 50px;
+}
+.s{
+	background : rgba(255,255,255,0);
+	width : 20px;
+	height : 20px;
+	padding : 20px;
+	padding-top : 42px;
+	margin : 0px;
+	position : absolute;
+}
+.s:focus {
+	text-decoration : none;
+	opacity : 0;
+}
+.s span{
+	display : block;
+	width : 20px;
+	height : 2px;
+	margin : 4px 0;
+	background : #4b0082;
+}
+.s_home span{
+	display : block;
+	width : 20px;
+	height : 2px;
+	margin : 4px 0;
+	background : #4b0082;
+}
+
+
+.user_data {
+	width : 100%;
+	margin : auto;
+}
+.hr1{
+	color : #F3F3F3;
+	opacity : 0.3 !important;
+}
+
+.user_avatar {
+	width : 25%;
+	margin : auto;
+}
+
+.user_info {
+	width : 65%;
+	margin : auto;
+}
+.user_name {
+	width : 100%;
+	font-size : 16px;
+	color : #F3F3F3;
+	opacity : 0.8;
+	text-align : left;
+}
+.user_email {
+	width : 100%;
+	font-size : 10px;
+	color : #FFF700;
+	opacity : 0.8;
+	text-align : left;
+}
+
+.drawer-menu {
+		
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:before,
+.drawer-hamburger-icon:after {
+  width: 100%;
+  height: 1px;
+  -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  background-color: white;
+  padding : 1px;
+  margin-bottom : 10px;
+  
+}
+
+.drawer-menu-item {
+	color : #F3F3F3;
+	font-size : 13px;
+	opacity : 0.8;
+}
+.drawer-menu-item:hover {
+	color : #FFF700;
+}
+
+.logout-link {
+	color : #FFF700;
+	opacity : 0.8;
+}
+
+
+/* rent */
+
+.rent_main {
+	width : 100%;
+	background : rgba(0,0,0,0);
+}
+
+.rent_upper {
+	width : 100%;
+	ackground : #CC28BC;
+	padding : 10px 37px;
+	box-shadow: 0px 2px 10px 0px rgba(83, 0, 75, 0.3);
+	border-bottom : #CC28BC;
+}
+
+.rent_vehicle {
+	margin : auto;
+	margin-top : 20px;
+	width : 100%;
+	padding : 10px;
+}
+.rent_vehicle p {
+	text-align : center;
+	color : #CC28BC;
+	font-size : 16px;
+	font-weight : bold;
+	opacity : 0.7;		
+}
+
+.rent_dest {
+	width : 75%;
+	margin : auto;
+	margin-bottom : 20px;
+}
+.rent_dest .rent_select{
+	margin : auto;
+	border-radius : 200px;
+	border : 0;
+	height : 46px;
+	width : 44%;
+	font-size : 25px;
+	color : #606060;
+	padding-left : 22px;
+	background : white;
+	
+	
+}
+.arrow {
+	width : 25px;
+	height : 15px;
+	text-align : center;
+	margin : auto;
+	margin-bottom : 20px;
+	color : white;
+	font-weight : bold;
+	font-size : 17px;
+	padding-left : 5px;
+	padding-right : 5px;
+}
+
+.rent_trip {
+	width : 100%;
+	margin : auto;
+	padding : 25px 0px;
+}
+
+/* css checkbox */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin : auto;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(100%);
+  background : #4b0082;
+  content : " Round";
+  width : 50%;
+  height : 100%;
+  top : 4;
+  left : 1;
+  text-align : center;
+  font-size : 13px;
+  font-weight : 1;  
+  color : rgba(255,255,255, 0.7);
+  padding-top : 10px;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 120px;
+  width : 100%;
+}
+
+.slider.round:before {
+  border-radius: 120px;
+  background : #4b0082;
+  content : "One way";
+  width : 50%;
+  height : 100%;
+  top : 4;
+  left : 0;
+  margin : auto;
+  text-align : center;
+  font-size : 13px;
+  font-weight : 1;  
+  color : rgba(255,255,255, 0.7);
+  padding-top : 10px;
+}
+ 
+/* css checkbox end */
+
+.rent_lower {
+	width : 100%;
+	min-height : 50%;
+	padding : 30px 37px;
+	
+}
+
+.rent_input {
+	width : 100%;
+	margin :auto;
+	padding : 20px;
+	padding-top : 40px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+}
+.rent_input input {
+	width : 100%;
+	border : 2px solid #E0E0E0;
+	border-radius : 200px;
+	margin-bottom : 20px;
+}
+.rent_input input[type=date] {
+	font-size : 12px;
+    color: #707070;
+    opacity : 0.4;
+    padding : 10px;
+    padding-left : 20px;   
+}
+
+.date1 {
+	padding : 0px 10px;
+	width : 50%;
+}
+.date p {
+	font-size : 12px;
+	color : #707070;
+	opacity : 0.3;
+	text-align : center;
+	margin : auto;
+}
+
+.rent_input_select {
+	margin : auto;
+	width : 100%;
+	padding : 20px;
+	padding-top : 40px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+}
+
+.rent_select {
+	margin : auto;
+	width : 32%;
+	margin-bottom : 20px;
+	
+}
+.rent_select p {
+	font-size : 12px;
+	color : #707070;
+	opacity : 0.3;
+	text-align : center;
+	margin : auto;
+}
+.rent_select select {
+	width : 100%;
+	border : 2px solid #E0E0E0;
+	border-radius : 200px;
+	font-size : 12px;
+	color: #707070;
+    opacity : 0.4;
+    padding : 10px;
+    padding-left : 20px;
+}
+
+.date {
+	display : block;
+}
+
+.passengers {
+	display : block;
+}
+.rent_input_p {
+	font-size : 13px;
+	color : #707070;
+	opacity : 0.7;
+	margin-bottom : 3px;
+}
+.rent_select select {
+	background : white;
+}
+
+.fleet {
+	display : block;
+	margin : auto;
+}
+
+.rent_input_fleet {
+	width : 100%;
+	margin :auto;
+	padding : 20px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+}
+
+.rent_button {
+	width : 50%;
+}
+.rent_button button {
+	width : 100%;
+	border-radius : 200px;
+	background : white;
+	text-align : center;
+	font-size : 10px;
+	opacity : 0.4;	
+	padding : 10px;
+	border : 1px solid #E0E0E0;
+}
+
+.rent_button span {
+	color : #707070;
+	opacity : 0.5;
+	font-weight : bold;
+	font-size : 12px;
+}
+
+.button1 {
+	border : 0 !important;
+	background : #CC28BC !important;
+	opacity : 1!important;
+}
+.button1 span {
+	color : white;
+	opacity : 0.8;
+}
+
+.radio_buttons {
+	width : 100%;
+	margin :auto;
+	padding : 20px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+	
+}
+
+/* css radio */
+
+/* Customize the label (the radio) */
+.radio {
+	width : 46%;
+	height : 32px;
+	margin : auto;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 200px;
+  border : 1px solid #E0E0E0;
+  font-size : 12px;
+  color : #E0E0E0;
+  text-align : center;
+  content : "Regular";
+  padding-top : 7px;
+}
+.checkmark1:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 200px;
+  border : 1px solid #E0E0E0;
+  font-size : 12px;
+  color : #E0E0E0;
+  text-align : center;
+  content : "Executive";
+  padding-top : 7px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.radio:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.radio input:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkmark:after {
+  top: 0px;
+  left: 0px;
+  width : 100%;
+  height: 100%;
+  border-radius: 200px;
+  background: #CC28BC;
+  border : 0;
+  font-size : 12px;
+  color : #fae4f8;
+  text-align : center;
+  content : "Regular";
+  padding-top : 7px;
+  transition : 5s;
+  
+}
+.radio .checkmark1:after {
+  top: 0px;
+  left: 0px;
+  width : 100%;
+  height: 100%;
+  border-radius: 200px;
+  background: #CC28BC;
+  border : 0;
+  font-size : 12px;
+  color : #fae4f8;
+  text-align : center;
+  content : "Executive";
+  padding-top : 7px;
+  transition : 5s ease-out;
+  
+}
+ 
+/* css radio end */
+
+
+.search_button {
+	width : 100%;
+}
+.search_button button {
+	width : 100%;
+	border : 0;
+	border-radius : 200px;
+	font-size : 16px;
+	color : white;
+	padding : 10px;
+	background : linear-gradient(to right, #4b0082, #9C3192);
+}
+.search_button button:focus {
+	width : 100%;
+	border : 0;
+	border-radius : 200px;
+	font-size : 16px;
+	color : white;
+	padding : 10px;
+	background : linear-gradient(to right, #88007a, #c74bba);
+	
+}
+
+/* end rent */
+
+/* bus_sel */
+
+.white_section {
+	background : white;
+	width : 100%;
+	min-height : 100px;
+	border-radius : 6px;
+	margin-bottom : 10px;
+}
+.inner_white_section {
+	padding : 3%;
+	height : 100%;
+	margin : auto;
+}
+.vehicle {
+	height : 100%;
+	width : 20%;
+	margin : auto;
+}
+.v_select:hover, .v_select:focus {
+	background : #efefef;
+}
+.vehicle img {
+	width : 100%;
+	margin : auto;
+	margin-top : 40%;
+}
+.info_price {
+	width : 30%;
+	height : 100%;
+	margin : auto;
+	text-align : center;
+}
+.info_price span {
+	font-size : 12px;
+}
+.info_price p {
+	margin-top : 10%;
+}
+.select {
+	width : 20%;
+	height : 100%;
+	margin : auto;
+	text-align : center;
+}
+.select span {
+	font-size : 12px;
+}
+.checkbox {
+	width : 30%;
+	height : 100%;
+	margin : auto;
+	text-align : center;
+}
+.checkbox input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  width : 30%;
+  margin : auto;
+  margin-top : 40%;
+}
+.checkbox input[type=radio]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  width : 30%;
+  margin : auto;
+  margin-top : 40%;
+}
+
+.select select {
+	width : 100%;
+	margin : auto;
+	margin-top : 20%;
+}
+
+.p10 {
+	padding-right : 10px;
+}
+
+.qty span {
+	font-size : 25px;
+	text-align : center;
+}
+.amount {
+	
+}
+.vehicle span {
+	font-size : 12px;
+}
+.vehicle img {
+	margin-top : 10%;
+}
+.bus_error {
+	font-size : 30px;
+}
+.carselect {
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+/* end bus_sel */
+
+/* seat_sel */
+
+
+/*camry*/
+.v1 {
+	margin : auto;
+}
+.v2 {
+	display : block;
+	position : fixed;
+	min-width : 320px;
+	height : 500px;
+	margin : auto;
+}
+.v2 img {
+	position : absolute;
+	width : 100%;
+	height : 100%;
+}
+.seats {
+	padding : 15px;
+	padding-left : 20%;
+	padding-right : 20%;
+	width : 100%;
+	height : 100%;
+	position : relative;
+	z-index : 1;
+}
+.row0 {
+	width : 100%;
+	height : 40%;
+}
+.row1 {
+	width : 100%;
+	height : 20%;
+	padding-bottom : 20%;
+	margin : 0 !important;
+}
+.row2 {
+	width : 100%;
+	height : 20%;
+	padding-bottom : 20%;
+	margin : 0 !important;
+}
+.seat0 {
+	
+	width : 40%;
+	height : 100%;
+	border-radius : 50px;
+}
+.seat1 {
+	
+	width : 40%;
+	height : 100%;
+	border-radius : 50px;
+}
+.seatmid {
+	width : 20%;
+	color : green;
+}
+.seat {
+	
+}
+.seat_selected {
+	background : rgba(255,0,0,0.4);
+}
+
+.bottom{
+	position : fixed;
+	bottom : 0;
+	width : 90% !important;
+	margin-bottom : 20px !important;
+}
+
+
+/*sienna*/
+.sv1 {
+	margin : auto;
+}
+.sv2 {
+	display : block;
+	position : fixed;
+	min-width : 320px;
+	height : 500px;
+	margin : auto;
+}
+.sv2 img {
+	position : absolute;
+	width : 100%;
+	height : 100%;
+}
+.sseats {
+	padding : 15px;
+	padding-left : 20%;
+	padding-right : 20%;
+	width : 100%;
+	height : 100%;
+	position : relative;
+	z-index : 1;
+}
+.srow0 {
+	width : 100%;
+	height : 35%;
+}
+.srow1 {
+	width : 100%;
+	height : 18%;
+	padding-bottom : 15%;
+	margin : 0 !important;
+}
+.srow2 {
+	width : 100%;
+	height : 18%;
+	padding-bottom : 15%;
+	margin : 0 !important;
+}
+.srow3 {
+	width : 100%;
+	height : 20%;
+	padding-bottom : 20%;
+	margin : 0 !important;
+}
+.sseat0 {
+	
+	width : 40%;
+	height : 100%;
+	border-radius : 50px;
+}
+.sseat1 {
+	
+	width : 40%;
+	height : 100%;
+	border-radius : 50px;
+}
+.sseatmid {
+	width : 20%;
+	color : green;
+}
+.sseat {
+	
+}
+
+/*summary*/
+
+.booked_info tr{
+	line-height : 200%;
+}
+.booked_info tr hr {
+	margin-bottom : 10px;
+}
+.booked_route { 
+	font-size : 20px;
+	text-align : center;
+}.booked_data {
+	color : grey;
+}
+.booked_colon {
+	padding-left : 20px;
+	padding-right : 20px;
+	color : black;
+	font-weight : bold;
+}
+.summary_main {
+	width : 150px !important;
+	font-weight : bold;
+	color : black;
+}
+.uni {
+	font-size : 12px;
+}
+.uni td {
+	padding-top : 0px;
+	padding-bottom : 10px;
+	line-height : 15px;
+}
+.unitable {
+	
+}
+
+.status {
+	width : 50% !important;
+	margin : auto;
+	display : block;
+}
+/* rent 2 */
+
+.bottom_white {
+	border : none;
+	border-bottom : 1px solid #4b0082;
+	margin-bottom : 30px !important;
+}
+.bottom_white input::placeholder {
+	color : #c0c0c0;
+}
+.rent2_main {
+	width : 100%;
+	height : 100%;
+	color : grey;
+	font-size : 15px;
+	margin : auto;
+	padding : 20px!important;
+}
+.rent2_upper {
+	width : 100%;
+	margin-top : 10px;
+}
+.r2u {
+	width : 100%;
+	float : right;
+	margin-top : 10px;
+}
+.rent2_upper p {
+	text-align : center;
+	color : #4b0082;
+	font-size : 20px;
+	font-weight : bold;
+}
+.rent2_lower {
+	width : 100%;
+	max-height : 100%;
+	margin-top : 100px;
+	margin-bottom : 30% !important;
+}
+.rent2_lower p {
+	width : 100%;
+	margin-bottom : 0;
+	color : #4b0082;
+}
+.rent2_lower select {
+	width : 100%;
+	background : none;
+	border : none;
+	font-size : 20px;
+	font-weight : bold;
+	color : grey;
+}
+.rent2_lower option[value = ""] {
+	color : #c0c0c0;
+}
+.rent2_lower input {
+	width : 100%;
+	background : none;
+	border : none;
+	font-size : 20px;
+	font-weight : bold;
+	color : grey;
+}
+.rent2_lower input[type = radio] {
+	width : 50px;
+	background : none;
+	border : none;
+	font-size : 20px;
+	font-weight : bold;
+	color : black;
+}
+.rent2_lower input[type = date] {
+	width : 100%;
+	background : none;
+	border : none;
+	font-size : 20px;
+	font-weight : 1;
+	color : black;
+}
+
+.rent_from {
+	
+}
+
+.rent_to {
+	
+}
+
+.pass {
+	margin : 0;
+	width : 100%;
+	margin : auto;
+}
+
+.passengers {
+	width : 100%;
+	margin : auto;
+}
+
+.rent_type {
+	
+}
+.rent_type p {
+	width : 100%;
+}
+.rent_type .row {
+	padding : 5 20px;
+}
+
+.depart_date {
+	
+}
+
+.depart_time {
+	
+}
+.depart {
+	padding : 5 20px;
+}
+.depart .row {
+	
+}
+#return_date {
+	transition : ease-in 1s;
+}
+.w-40 {
+	width : 40%;
+}
+.r_search {
+	color : #4b0082;
+	margin-top : 30%;
+}
+.error {
+	color : red;
+	font-weight : bold;
+	width : 100%;
+}
+
+
+
+
+/* book a ticket */
+
+.book_main {
+	width : 100%;
+	background : rgba(0,0,0,0);
+}
+
+.book_upper {
+	width : 100%;
+	background : #4b0082;
+	padding : 10px 37px;
+	box-shadow: 0px 2px 10px 0px rgba(83, 0, 75, 0.3);
+}
+
+.book_vehicle {
+	margin : auto;
+	margin-top : 20px;
+	width : 100%;
+	padding : 10px;
+}
+.book_vehicle p {
+	text-align : center;
+	color : white;
+	font-size : 16px;
+	font-weight : bold;
+	opacity : 0.7;		
+}
+
+.book_dest {
+	width : 75%;
+	margin : auto;
+	margin-bottom : 20px;
+}
+.book_dest .book_select{
+	margin : auto;
+	border-radius : 200px;
+	border : 0;
+	height : 46px;
+	width : 44%;
+	font-size : 25px;
+	color : #606060;
+	padding-left : 22px;
+	background : white;
+	
+	
+}
+.arrow {
+	width : 25px;
+	height : 15px;
+	text-align : center;
+	margin : auto;
+	margin-bottom : 20px;
+	color : white;
+	font-weight : bold;
+	font-size : 17px;
+	padding-left : 5px;
+	padding-right : 5px;
+}
+
+.book_trip {
+	width : 100%;
+	margin : auto;
+	padding : 25px 0px;
+}
+
+/* css checkbox */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin : auto;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.book_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.book_slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .book_slider {
+  background-color: white;
+}
+
+input:focus + .book_slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .book_slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(100%);
+  background : #CC28BC;
+  content : " Round";
+  width : 50%;
+  height : 100%;
+  top : 4;
+  left : 1;
+  text-align : center;
+  font-size : 13px;
+  font-weight : 1;  
+  color : rgba(255,255,255, 0.7);
+  padding-top : 10px;
+}
+
+/* Rounded book_sliders */
+.book_slider.round {
+  border-radius: 120px;
+  width : 100%;
+}
+
+.book_slider.round:before {
+  border-radius: 120px;
+  background : #CC28BC;
+  content : "One way";
+  width : 50%;
+  height : 100%;
+  top : 4;
+  left : 0;
+  margin : auto;
+  text-align : center;
+  font-size : 13px;
+  font-weight : 1;  
+  color : rgba(255,255,255, 0.7);
+  padding-top : 10px;
+}
+ 
+/* css checkbox end */
+
+.book_lower {
+	width : 100%;
+	min-height : 50%;
+	padding : 30px 37px;
+	
+}
+
+.book_input {
+	width : 100%;
+	margin :auto;
+	padding : 20px;
+	padding-top : 40px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+}
+.book_input input {
+	width : 100%;
+	border : 2px solid #E0E0E0;
+	border-radius : 200px;
+	margin-bottom : 20px;
+}
+.book_input input[type=date] {
+	font-size : 12px;
+    color: #707070;
+    opacity : 0.4;
+    padding : 10px;
+    padding-left : 20px;   
+}
+
+.date1 {
+	padding : 0px 10px;
+	width : 50%;
+}
+.date p {
+	font-size : 12px;
+	color : #707070;
+	opacity : 0.3;
+	text-align : center;
+	margin : auto;
+}
+
+.book_input_select {
+	margin : auto;
+	width : 100%;
+	padding : 20px;
+	padding-top : 40px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+}
+
+.book_select {
+	margin : auto;
+	width : 32%;
+	margin-bottom : 20px;
+	
+}
+.book_select p {
+	font-size : 12px;
+	color : #707070;
+	opacity : 0.3;
+	text-align : center;
+	margin : auto;
+}
+.book_select select {
+	width : 100%;
+	border : 2px solid #E0E0E0;
+	border-radius : 200px;
+	font-size : 12px;
+	color: #707070;
+    opacity : 0.4;
+    padding : 10px;
+    padding-left : 20px;
+}
+
+.date {
+	display : block;
+}
+
+.passengers {
+	display : block;
+}
+.book_input_p {
+	font-size : 13px;
+	color : #707070;
+	opacity : 0.7;
+	margin-bottom : 3px;
+}
+.book_select select {
+	background : white;
+}
+
+.fleet {
+	display : block;
+	margin : auto;
+}
+
+.book_input_fleet {
+	width : 100%;
+	margin :auto;
+	padding : 20px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+}
+
+.book_button {
+	width : 50%;
+}
+.book_button button {
+	width : 100%;
+	border-radius : 200px;
+	background : white;
+	text-align : center;
+	font-size : 10px;
+	opacity : 0.4;	
+	padding : 10px;
+	border : 1px solid #E0E0E0;
+}
+
+.book_button span {
+	color : #707070;
+	opacity : 0.5;
+	font-weight : bold;
+	font-size : 12px;
+}
+
+.button1 {
+	border : 2px solid #4b0082 !important;
+	background : white !important;
+	opacity : 1!important;
+	border-radio : 10px;
+}
+.button1 span {
+	color : #4b0082;
+	opacity : 0.8;
+}
+
+.radio_buttons {
+	width : 100%;
+	margin :auto;
+	padding : 20px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	color : #707070;
+	border-radius : 6px;
+	
+}
+
+/* css radio */
+
+/* Customize the label (the radio) */
+.radio {
+	width : 46%;
+	height : 32px;
+	margin : auto;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 200px;
+  border : 1px solid #E0E0E0;
+  font-size : 12px;
+  color : #E0E0E0;
+  text-align : center;
+  content : "Regular";
+  padding-top : 7px;
+}
+.checkmark1:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 200px;
+  border : 1px solid #E0E0E0;
+  font-size : 12px;
+  color : #E0E0E0;
+  text-align : center;
+  content : "Executive";
+  padding-top : 7px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.radio:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.radio input:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkmark:after {
+  top: 0px;
+  left: 0px;
+  width : 100%;
+  height: 100%;
+  border-radius: 200px;
+  background: #4b0082;
+  border : 0;
+  font-size : 12px;
+  color : #fae4f8;
+  text-align : center;
+  content : "Regular";
+  padding-top : 7px;
+  transition : 5s;
+  
+}
+.radio .checkmark1:after {
+  top: 0px;
+  left: 0px;
+  width : 100%;
+  height: 100%;
+  border-radius: 200px;
+  background: #4b0082;
+  border : 0;
+  font-size : 12px;
+  color : #fae4f8;
+  text-align : center;
+  content : "Executive";
+  padding-top : 7px;
+  transition : 5s ease-out;
+  
+}
+ 
+/* css radio end */
+
+
+.search_button {
+	width : 100%;
+}
+.search_button button {
+	width : 100%;
+	border : 2px solid #4b0082;
+	border-radius : 10px;
+	font-size : 16px;
+	font-weight : bold;
+	color : #4b0082;
+	padding : 10px;
+	background : linear-gradient(to right, white, white);
+}
+.search_button button:focus {
+	width : 100%;
+	border : 0;
+	border-radius : 10px;
+	font-size : 16px;
+	color : white;
+	padding : 10px;
+	background : linear-gradient(to right, #9C3192, #4b0082);
+	
+}
+
+/* end book a ticket */
+
+
+/* booking history */
+
+
+.history_date1 {
+	width : 100%;
+	margin : auto;
+	margin-bottom : 15px;
+}
+.history_date1 p {
+	color : white;
+	opacity : 0.8;
+	text-align : center;
+	font-size :14px;
+	margin-bottom : 5px;
+}
+.history_date1 input {
+	margin : auto;
+	border-radius : 200px;
+	border : 0;
+	height : 46px;
+	font-size : 14px;
+	color : #606060;
+	padding-left : 22px;
+	background : white;
+}
+
+.history_search {
+	width : 100%;
+	margin : auto;
+	padding : 25px 0px;
+	padding-top : 0px;
+}
+.history_search_button {
+	width : 100%;
+	margin : auto;
+}
+.history_search_button button {
+	width : 100%;
+	border : 2px solid white;
+	border-radius : 200px;
+	font-size : 16px;
+	color : white;
+	padding : 10px;
+	background : linear-gradient(to right, #CC28BC, #9C3192);
+}
+.history_search_button button:focus {
+	width : 100%;
+	border : 0;
+	border-radius : 200px;
+	font-size : 16px;
+	color : white;
+	padding : 10px;
+	background : linear-gradient(to right, #9C3192, #4b0082);
+	
+}
+
+.transactions {
+	display : block;
+}
+.history_transactions_p {
+	font-size : 13px;
+	color : #707070;
+	opacity : 0.7;
+	margin-bottom : 3px;
+}
+.transactions_list {
+	margin : auto;
+	width : 100%;
+	padding : 20px;
+	padding-top : 40px;
+	margin-bottom : 30px;
+	background : white;
+	box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+	border-radius : 6px;
+}
+.transactions_list p, .transactions_list a {
+	opacity : 0.7;
+	font-size : 13px;
+	color : #707070;
+}
+
+.pad {
+	padding-left : 0;
+	padding-right : 20px;
+	padding-top : 10px;
+}
+.red {
+	color : red;
+}
+.green {
+	color : green;
+}
+.blue {
+	color : blue;
+}
+.orange {
+	color : orange;
+}
+/* end booking history */
+
+
+/* trans_info */
+.trans_info_contact_button {
+	margin : auto;
+	width : 30%;
+	font-size : 16px;
+	color : white;
+}
+.trans_info_contact_button:focus {
+	background : linear-gradient(to right, #9C3192, #4b0082);
+}
+.trans_info_contact_button a {
+	display : block;
+	font-size : 16px;
+	color : white;
+	text-align : center;
+	border : 2px solid white;
+	border-radius : 200px;
+	font-size : 16px;
+	color : white;
+	padding : 10px;
+	background : linear-gradient(to right, #CC28BC, #9C3192);
+}
+.trans_info_contact_button a:focus {
+	display : block;
+	border : 2px solid #CC28BC;
+	border-radius : 200px;
+	font-size : 16px;
+	color : white;
+	background : linear-gradient(to right, #9C3192, #4b0082);
+	text-decoration : none;	
+}
+.transactions_list h2 {
+	font-size : 20px;
+}
+.transactions_list h3 {
+	font-size : 15px;
+	margin-bottom : 2px;
+	margin-top : 15px;
+}
+.transactions_list button {
+  height: 30px;
+  width: 100px;
+  margin : auto;
+  margin-top : 30px;
+  background-color: white;
+  border-radius: 5px;
+  border : 2px solid #4b0082;
+  font-size : 12px;
+  color : #4b0082;
+  text-align : center;
+  content : "Executive";
+  padding-top : 2px;
+}
+
+
+.trans_info_det {
+	font-size : 12px;
+}
+
+/* end trans_info */
+
+/* share */
+
+/* end share */
+
+
+/* contact */
+
+.contacts_p {
+	font-size : 14px;
+	color : #707070;
+	opacity : 0.7;
+	margin-bottom : 3px;
+}
+
+.contacts_icons {
+	width : 100%;
+	margin : auto;
+}
+.contact_icon {
+	width : 20%;
+	padding : 10px;
+	margin : auto;
+}
+.contact_icon img {
+	width : 100%;
+}
+
+.contacts_list h2 {
+	font-size : 20px;
+}
+.contacts_list h3 {
+	font-size : 15px;
+	margin-bottom : 2px;
+	margin-top : 15px;
+}
+.contacts_list button {
+  height: 30px;
+  width: 100px;
+  margin : auto;
+  margin-top : 30px;
+  background-color: white;
+  border-radius: 20px;
+  border : 2px solid #4b0082;
+  font-size : 12px;
+  color : #4b0082;
+  text-align : center;
+  content : "Executive";
+  padding-top : 2px;
+}
+
+
+.trans_info_det {
+	font-size : 12px;
+}
+
+#con_table tr:nth-child(even){
+	background : rgba(0,0,0,0.0) !important;
+	margin : 10px;
+}
+
+.con_table {
+	width : 100%;
+}
+
+/* end contact */
+
+/* admin extra */
+.div_main {
+	width : 100%;
+	padding : 3%;
+	margin : auto;
+}
+button:hover button:focus button:active {
+	background : rgba(255,0,255,0.1);
+}
+
+/* user list */
+
+.usearch_div {
+	
+}
+.usearch_div input, .div_main input, .div_main select {
+	width : 100%;
+	background : rgba(0,0,0,0.03);
+	opacity : 1;
+	padding : 3%;
+	border-radius : 5px;
+	border-bottom : 1px solid #4b0082;
+	margin : auto; 
+	margin-bottom : 1%;
+	
+}
+.usearch_button {
+	width : 20%;
+	border-radius : 5px;
+	border : 2px solid #4b0082;
+	padding : 3%;
+	margin : auto;
+}
+
+.w-47 {
+	width : 47% !important;
+}
+.w-50 img {
+	width : 80%;
+	margin : auto;
+}
+
+.grbg {
+	background : grey !important;
+}
+
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width : 600px;
+  top : 50%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  color: #4b0082;
+  background-color: #efefef !important;
+  font-size : 15px !important;
+}
+
+/* Modal Body */
+.modal-body {
+	padding: 2px 16px;
+	font-size: 10px;
+	
+}
+.modal-body p{
+	color : gray;
+}
+.modal-body2 {
+	
+	padding: 2px 16px;
+	font-size: 15px;
+	
+}
+.modal-body2 p{
+	color : red;
+}
+
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+/* branch list */
+#branchlist a{
+	text-decoration : none;
+	color : grey;
+}
+.branch {
+	width : 100%;
+	background : rgba(255,0,100,0.1);
+	opacity : 1;
+	padding : 0;
+	border-radius : 5px;
+	margin : auto; 
+	margin-bottom : 5%;
+	box-shadow: 10px 10px 15px 0px rgba(83, 0, 75, 0.3);
+}
+.branch:hover .branch:focus .branch:active{
+	color : #4b0082;
+	background : white;
+}
+.branch_top .left {
+	
+}
+.branch_bottom .right {
+	
+}
+tr:nth-child(even){
+	background : rgba(0,0,0,0.1);
+	margin : 10px;
+}
+
+
+/*past mobile*/
+
+@media all and (min-width : 801px){
+	
+	body {
+		margin : auto;
+	}
+	
+	.homebg {
+		
+	}
+	
+	.home_icon {
+		margin : auto;
+	}
+	.home_icon img{
+		margin : auto;
+		width : 70%;
+	}
+	.home_icons{
+		width : 20%;
+		margin : auto;
+		margin-top : 10%;
+	}
+	
+	
+	.createbg {
+		
+	}
+	
+	.homebg .backimg {
+		
+	}
+	
+	.rent2_lower {
+		margin : auto;
+		margin-bottom : 500px !important;
+		width : 60% !important;	
+	}
+	.def_button {
+		margin : auto !important ;
+		margin-bottom : 20px !important;
+		width : 60% !important;	
+	}
+	.bottom {
+		position : fixed;
+		bottom : 0;
+		width : 60%;
+		margin : auto;
+		margin-bottom : 20px !important;
+	}
+
+	.drawer--sidebar-extend{
+		display : block;
+		position : fixed !important;
+		height : 100% !important;
+		width : 100%;
+	}
+	
+}
+
+@media all and (max-width : 374px){
+	.rent_dest select{
+		width : 100%;
+	}
+}

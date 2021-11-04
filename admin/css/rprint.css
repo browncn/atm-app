@@ -1,0 +1,41 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	padding-top : 100px;
+	width : 700px;
+	margin : auto;
+}
+.b {
+	font-weight : bold;
+	font-size : 30px;
+	width : 100%;
+	text-align : center;
+}
+
+.th th{
+	padding-right : 40px;
+	text-align : left;
+	margin : 0px;
+	font-size : 15px;
+}
+.address td {
+	padding-right : 15px;
+	font-size : 10px;
+	color : blue;
+}
+
+@media print {
+.print {
+	visibility : hidden;
+}
+}
+table {
+	margin : auto;
+}
+.admin {
+	padding-bottom : 50px;
+}
+
+#footer{
+	text-align : center;
+}

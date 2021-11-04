@@ -1,0 +1,67 @@
+<html>
+<head>
+	<link media = all  rel = stylesheet href="css/bootstrap.min.css">
+	<link media = all  rel = stylesheet href="css/fontawesome.css">
+	<link media = all  rel = stylesheet href="css/owl.carousel.css">
+	<link media = all  rel = stylesheet href="css/owl.theme.default.css">
+	<link media = all  rel = stylesheet href="css/aos.css">
+	<link media = all  rel = stylesheet href="css/head.css">
+	<link media = all  rel = stylesheet href="css/css.css">
+	
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+<link rel = "shortcut icon" type = "icons/logo.png" href = "">
+	
+	<title>ATM</title>
+</head>
+
+<body>
+
+<div class = "container">
+	<div class = "login_icon">
+		<img src = "icons/logo3.svg" width = 100%>
+	</div>
+	<form>
+	<div class = "login">
+		<div class = "login_form">
+			<p>Phone/Email</p>
+			<input class = "form-control " type = "text" name = "uinfo" id = "uinfo" autofocus>
+		</div>
+		<div class = "login_form">
+			<p>Password</p>
+			<input class = "form-control " type = "password" name = "pass" id = "pass">
+		</div>
+		<div class = "check">
+			<label class="gender_label">
+  					<input type="checkbox" name = "keep" id = "keep" >
+					<span class="gender_label_span"></span>
+			</label>
+			<span>Remember login details</span>
+			<div id = "error" class = "error"></div>
+		</div>
+		<div class = "signin_button">
+			<button  id = "signin" onclick="return false" value = "sign in">Sign In</button>
+		</div>
+		<div class = "or">
+			<p>&mdash; or &mdash;</p>
+		</div>
+		<div class = "create_button">
+			<button onclick="return false" onmousedown = location.assign("create.html");>Create Account</button>
+		</div>
+		<div class = "forgot">
+			<p>Forgot Password?</p>
+		</div>
+	</div>
+	</form>
+</div>
+<script src = "js/jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/index.js"></script>
+
+</body>
+</html>
